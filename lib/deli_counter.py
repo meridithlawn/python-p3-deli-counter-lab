@@ -14,14 +14,12 @@ def take_a_number(katz_deli, new_customer):
     katz_deli.append(new_customer)
     print(f'Welcome, {new_customer}. ' +\
         f'You are number {len(katz_deli)} in line.')
-# def take_a_number(katz_deli, name):
-#     katz_deli.append(name)
-#     for 
-#     print(f'{name}, you are number {katz_deli[(i+1)]} in line!')
+
 
 def now_serving(katz_deli):
     if not katz_deli:
         print("There is nobody waiting to be served!")
     else:
-        print(f'Currently serving {katz_deli[0]}.')
-        del katz_deli[0]
+        # pop removes and returns removed element, so you can do both in one step. 
+        print(f'Currently serving {katz_deli.pop(0)}.')
+        # del katz_deli[0]
